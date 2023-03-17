@@ -1,0 +1,53 @@
+const comidas = [
+	"Arroz com feijão",
+	"Lasanha",
+	"Pizza",
+	"Hambúrguer",
+	"Churrasco",
+	"Macarronada",
+	"Strogonoff",
+	"Sushi",
+	"Comida chinesa",
+	"Comida mexicana",
+	"Comida japonesa",
+	"Comida árabe",
+	"Comida italiana",
+	"Comida francesa",
+	"Comida brasileira",
+    "Hambúrguer",
+    "Cheeseburguer",
+    "X-salada",
+    "X-bacon",
+    "X-egg",
+    "Bauru",
+    "Misto quente",
+    "Sanduíche natural",
+    "Pão com linguiça",
+    "Beirute",
+    "Burrito",
+    "Tacos",
+    "Wrap",
+    "Shawarma",
+    "Falafel",
+    "Croissant",
+    "Bagel",
+    "BLT (bacon, alface e tomate)",
+    "Club sandwich",
+   "Hot dog",
+    "Cachorro-quente com purê de batatas",
+    "Pão de queijo com requeijão",
+    "Pão de batata com catupiry",
+    "Empadão de frango",
+    "Pastel",
+    "Coxinha",
+    "Kibe",
+    "Esfiha",
+    "Pão de linguiça",
+    "Tapioca recheada"
+];
+
+function gerarSugestao() {
+	const indice = Math.floor(Math.random() * comidas.length);
+	const sugestao = comidas[indice];
+	document.getElementById("sugestao").innerHTML = sugestao;
+}
